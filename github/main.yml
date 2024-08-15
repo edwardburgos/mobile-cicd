@@ -5,13 +5,13 @@ on:
 
 jobs:
   # region android
-  # See https://github.com/ravnhq/fastlane-android-action for more configuration options.
+  # See https://github.com/edwardburgos/fastlane-android-action for more configuration options.
   deploy-android:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Build and publish
-        uses: ravnhq/fastlane-android-action@v1
+        uses: edwardburgos/fastlane-android-action@v1
         with:
           enforced-branch: main
           build-lane: release
@@ -29,13 +29,13 @@ jobs:
           # Read documentation for more inputs
   # endregion android
   # region ios
-  # See https://github.com/ravnhq/fastlane-ios-action for more configuration options.
+  # See https://github.com/edwardburgos/fastlane-ios-action for more configuration options.
   deploy-ios:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
       - name: Build and publish
-        uses: ravnhq/fastlane-ios-action@v1
+        uses: edwardburgos/fastlane-ios-action@v1
         with:
           enforced-branch: main
           build-lane: release

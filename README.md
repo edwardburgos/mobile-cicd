@@ -21,7 +21,7 @@ Run the following command to install/update the configuration files into your pr
 project root directory):
 
 ```shell
-bash <(curl -s https://raw.githubusercontent.com/ravnhq/mobile-cicd/main/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/edwardburgos/mobile-cicd/main/install.sh)
 ```
 
 The script will copy the configuration files over the root directory of your project, checking if any of them already
@@ -135,6 +135,6 @@ still apply (for example, `FL_BUILD_NUMBER=store` and `FL_COMMIT_INCREMENT=true`
 - [fastlane-android-action][fastlane-android-action]: Action to build and publish Android applications.
 - [fastlane-ios-action][fastlane-ios-action]: Action to build and publish iOS applications.
 
-[fastlane-android-action]: https://github.com/ravnhq/fastlane-android-action
+[fastlane-android-action]: https://github.com/edwardburgos/fastlane-android-action
 
-[fastlane-ios-action]: https://github.com/ravnhq/fastlane-ios-action
+[fastlane-ios-action]: https://github.com/edwardburgos/fastlane-ios-action
