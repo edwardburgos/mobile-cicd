@@ -98,7 +98,7 @@ private_lane :upload do |options|
 
   track = options[:track]
   release_status = 'draft'
-  track_promote_to = track == 'beta' ? track : 'nil'
+  track_promote_to = track == 'beta' ? track : nil
   upload_to_play_store(track:, track_promote_to:, release_status:)
 end
 
